@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+     background-color: #eee5e5;
+       justify-items: center;
+       align-content: center;
+        }
+        h1{
+            text-align: center;
+            margin-top: 10%;
+            color:transparent;
+            font-size: 3rem;
+            background: url(https://static.vecteezy.com/system/resources/previews/020/933/072/non_2x/abstract-blur-gradient-background-vector.jpg) center;
+            background-size: cover;
+            background-clip: text;
+            animation: animate 2.5s linear infinite;
+
+        }
+        @keyframes animate {
+            to{
+                background-position-x:500px ;
+            }
+        }
+        button{
+            margin-left: 48%;
+            text-align: center;
+            margin-top: 10px;
+            width: 80px;
+            padding: 5px 10px;
+            border-radius: 15px;
+            border: 2px solid #a64141;
+            font-weight: bolder;
+            cursor: pointer;
+            background: transparent;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        button:hover{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>GRADIENT</h1>
+   <button onclick="document.body.style.background=['black','yellow','pink','skyblue','wheat'][Math.floor(Math.random()*5)]">Click me</button>
+</body>
+</html>

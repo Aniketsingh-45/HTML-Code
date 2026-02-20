@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>birthday</title>
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Dancing+Script:wght@400..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+        body {
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            background-color: aqua;
+        }
+
+        .container {
+            margin: 90px 50px;
+            height: 350px;
+            width: 400px;
+            border: 10px solid rgb(82, 142, 111);
+            background-image: url(1000_F_294337875_6xeUQ5nsxUyuGK6xneZbkEPR9WHT7TO4.jpg);
+            background-size: cover;
+            position: fixed;
+            box-shadow: 9px 9px 20px 3px rgb(56, 6, 6);
+            transform: rotate(360deg);
+            transition: ease-in-out;
+            border-radius: 10px;
+
+        }
+
+
+        .wish {
+            color: rgb(44, 81, 62);
+            margin-top: 160px;
+            margin-left: 55px;
+            font-size: 50px;
+            font-family: "Alumni Sans SC", sans-serif;
+            font-weight: 200;
+            line-height: 3%;
+            animation: rotate 0.6s ease-in 1;
+            animation-delay: 0.2s;
+
+
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(-180deg)
+            }
+
+            100% {
+                transform: scale(1)
+            }
+
+
+
+        }
+
+        .b a{
+
+            font-size: 80px;
+            font-family: "Dancing Script", cursive;
+            font-weight: bold;
+            color: rgba(228, 81, 27, 0.93);
+
+            margin-left: 10px;
+            animation: spinText 1s linear 1;
+            animation-delay: 0.9s;
+            text-decoration: none;
+            display: inline-block;
+            
+            
+        }
+
+        @keyframes spinText {
+            0% {
+                transform: scale(2)
+            }
+
+            100% {
+                transform: scale(1)
+            }
+        }
+
+        .you {
+            margin-left: 130px;
+            font-family: "Alumni Sans SC", sans-serif;
+            font-size: 50px;
+            line-height: 11px;
+            font-weight: 200;
+            color: rgb(44, 81, 62);
+            animation: you 0.6s linear 1;
+            animation-delay: 1.8s;
+        }
+         @keyframes you {
+            0% {
+                transform: rotate(180deg)
+            }
+
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+        @media only screen and (max-width: 500px) {
+            .container {
+                margin: 216px 7px;
+                height: 350px;
+                width: 330px;
+            }
+        }
+        .click{
+            text-align: end;
+            margin: 60px 6px;
+            text-wrap: wrap;
+            font-family:"Dancing Script", cursive;
+            font-weight: bolder;
+            font-size: large;
+            color: rgb(117, 42, 54);
+        
+        }
+    </style>
+    <div class="container">
+        <div class="wish">Happy</div>
+        <div class="b"> <a href="https://youtu.be/55c6IlV7BEo?si=uNuoBJEJ7fz1RR_h&t=30">Birthday!</a></div>
+        <div class="you">To You </div>
+        <div class="click">click on Birthday</div>
+    </div>
+
+</body>
+
+</html>

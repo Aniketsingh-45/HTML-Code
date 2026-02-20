@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<style>
+    body {
+        background: url(https://static.vecteezy.com/system/resources/previews/006/852/864/non_2x/abstract-colorful-different-form-background-free-vector.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        backdrop-filter: blur(2px);
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+
+
+    }
+
+    .container {
+        width: 500px;
+        margin: 40px auto;
+        border: 2px solid black;
+        padding: 20px;
+        background-color: rgb(255, 253, 250);
+        border-radius: 15px;
+        box-shadow: 0 0 10px 5px , inset 0 0 99px 20px rgb(92, 164, 164);
+    }
+
+    #dob {
+        display: inline;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    form {
+
+        margin: 40px 10px;
+    }
+
+    label {
+        font-weight: bold;
+        display: inline-block;
+        width: 150px;
+        margin-bottom: 10px;
+
+    }
+
+    input,
+    select {
+        width: 300px;
+        padding: 5px;
+        margin-bottom: 15px;
+        border: 3px solid rgb(9, 8, 8);
+        border-radius: 5px;
+        font-weight: bolder;
+        box-shadow: 0 0 15px rgb(28, 20, 21, 0.5);
+        background: transparent;
+    }
+
+    input::placeholder {
+        color: rgb(9, 8, 8);
+        opacity: 1;
+
+    }
+
+    #first,
+    #last {
+        width: 25%;
+        color: rgb(0, 0, 0);
+    }
+
+    input[type="checkbox"],
+    input[type="radio"] {
+        width: auto;
+        box-shadow: none;
+        border: 5px solid black;
+    }
+
+    textarea {
+        width: 300px;
+        border: 3px solid rgb(0, 0, 0);
+        border-radius: 5px;
+        font-weight: bolder;
+        background: transparent;
+        box-shadow: 0 0 15px rgb(28, 20, 21, 0.5);
+    }
+
+    textarea::placeholder {
+        color: rgb(9, 8, 8);
+    }
+
+    input[type="submit"] {
+        width: 100px;
+        margin-left: 150px;
+        margin-top: 40px;
+        border-radius: 20px;
+        transition: box-shadow 0.3s ease;
+        font-size: large;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        cursor: pointer;
+        padding: 10px 20px;
+        color: black;
+    }
+
+    input[type="submit"]:hover {
+        background-color: wheat;
+        box-shadow: -5px -5px 25px #eb00ff, 5px 5px 23px #00f0ff;
+
+    }
+
+    #males,
+    #females {
+        width: 50px;
+    }
+
+    #dates {
+        width: 50px;
+        margin-right: 5px;
+    }
+
+    #months {
+        width: 100px;
+
+    }
+
+    #year {
+        width: 75px;
+
+    }
+
+    @media only screen and (max-width: 600px) {
+        .container {
+            width: 300px;
+            border-radius: 5px;
+        }
+
+        #first,
+        #last {
+            width: 250px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 250px;
+        }
+
+        input[type="submit"] {
+            margin-left: 90px;
+        }
+
+        #hobbie, #dod{
+            width: 258px;
+        }
+
+        #males,
+        #females {
+            width: 50px;
+        }
+
+        input[type="checkbox"] {
+            width: 12px;
+        }
+
+        #g {
+            width: 80px;
+        }
+
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h2>Profile Information</h2>
+        <form
+            action="https://thumbs.dreamstime.com/b/businessmen-holding-congratulation-sign-vector-business-banner-message-greeting-concept-background-62078998.jpg"
+            method="get">
+            <label for="name">Full Name:</label>
+            <input type="text" name="first" id="first" placeholder="First Name" required>
+            <input type="text" name="last" id="last" placeholder="Last Name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Email Address" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="Password" required><br><br>
+            <label for="confirm _password">Confirm Password:</label>
+            <input type="password" name="confirm" id="confirm" placeholder="Confirm Password" required><br><br>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age" placeholder="Age" min="5" max="85" required><br><br>
+            <label for="dob" id="dod">Date of Birth:</label>
+            <div id="dob">
+                <select name="date" id="dates">
+                    <option value="1" class="dates">1</option>
+                    <option value="1" class="dates">2</option>
+                    <option value="1" class="dates">3</option>
+                    <option value="1" class="dates">4</option>
+                    <option value="1" class="dates">5</option>
+                    <option value="1" class="dates">6</option>
+                    <option value="1" class="dates">7</option>
+                    <option value="1" class="dates">8</option>
+                    <option value="1" class="dates">9</option>
+                    <option value="1" class="dates">10</option>
+                    <option value="1" class="dates">11</option>
+                    <option value="1" class="dates">12</option>
+                    <option value="1" class="dates">13</option>
+                    <option value="1" class="dates">14</option>
+                    <option value="1" class="dates">15</option>
+                    <option value="1" class="dates">16</option>
+                    <option value="1" class="dates">17</option>
+                    <option value="1" class="dates">18</option>
+                    <option value="1" class="dates">19</option>
+                    <option value="1" class="dates">20</option>
+                    <option value="1" class="dates">21</option>
+                    <option value="1" class="dates">22</option>
+                    <option value="1" class="dates">23</option>
+                    <option value="1" class="dates">24</option>
+                    <option value="1" class="dates">25</option>
+                    <option value="1" class="dates">26</option>
+                    <option value="1" class="dates">27</option>
+                    <option value="1" class="dates">28</option>
+                    <option value="1" class="dates">29</option>
+                    <option value="1" class="dates">30</option>
+                    <option value="1" class="dates">31</option>
+
+                </select>
+                <select name="months" id="months">
+                    <option value="1">January</option>
+                    <option value="2">February</option>
+                    <option value="3">March</option>
+                    <option value="3">April</option>
+                    <option value="3">May</option>
+                    <option value="3">June</option>
+                    <option value="3">July</option>
+                    <option value="3">August</option>
+                    <option value="3">September</option>
+                    <option value="3">October</option>
+                    <option value="3">November</option>
+                    <option value="3">December</option>
+                </select>
+                <select name="year" id="year">
+                    <option value="2025">2025</option>
+                    <option value="2024">2024</option>
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                    <option value="2011">2011</option>
+                    <option value="2010">2010</option>
+                    <option value="2009">2009</option>
+                    <option value="2008">2008</option>
+                    <option value="2007">2007</option>
+                    <option value="2006">2006</option>
+                    <option value="2005">2005</option>
+                    <option value="2000">2000</option>
+                    <option value="1995">1995</option>
+                    <option value="1990">1990</option>
+                    <option value="1985">1985</option>
+                    <option value="1980">1980</option>
+                    <option value="1975">1975</option>
+                    <option value="1970">1970</option>
+                    <option value="1965">1965</option>
+                    <option value="1960">1960</option>
+                    <option value="1955">1955</option>
+                    <option value="1950">1950</option>
+                    <option value="1945">1945</option>
+                    <option value="1940">1940</option>
+                </select>
+            </div>
+
+            <br><br>
+            <label for="gender" id="g">Gender:</label>
+            <input type="radio" name="gender" id="male" value="male" required>
+            <label for="male" id="males">Male</label>
+            <input type="radio" name="gender" id="female" value="female" required>
+            <label for="female" id="females">Female</label><br><br>
+            <label for="color">Favourite Color:</label>
+            <input type="color" name="color" id="color"><br><br>
+            <label for="hobbie" id="hobbie">Hobbies:</label>
+            <input type="checkbox" name="hobbie" id="sport"> Sports
+            <input type="checkbox" name="hobbie" id="music"> Music
+            <input type="checkbox" name="hobbie" id="reading"> Reading
+            <input type="checkbox" name="hobbie" id="Others">Others<br><br>
+            <label for="photo">Uplod Photo:</label>
+            <input type="file" name="photo" id="photo"><br><br>
+            <label for="country">Country:</label>
+            <select name="country" id="country">
+                <option value="ind">IND</option>
+                <option value="usa">USA</option>
+                <option value="can">Can</option>
+            </select><br><br>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" name="phone" id="phone" placeholder="Phone Number" required><br><br>
+            <label for="address" id="addres">Address:</label>
+            <textarea name="address" id="address" placeholder="Address" required></textarea><br><br>
+            <input type="submit" value="Submit">
+
+
+
+
+
+        </form>
+    </div>
+
+</body>
+
+</html>

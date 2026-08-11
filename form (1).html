@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>Form</title>
+    <style>
+        body {
+            background: url(https://static.vecteezy.com/system/resources/previews/001/060/223/non_2x/rocket-is-flying-in-galaxy-space-of-the-universe-vector.jpg);
+            align-content: center;
+            justify-content: center;
+
+        }
+
+        .container {
+            backdrop-filter: blur(55px);
+            border: 2px solid black;
+            width: 400px;
+            height: 400px;
+            align-content: center;
+            text-align: center;
+            padding: 20px;
+            margin: 100px auto;
+            border-radius: 15px;
+            box-shadow: -1px -1px 10px 1px #000000;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        input {
+            width: 200px;
+            margin-bottom: 10px;
+            padding: 5px;
+            border-radius: 5px;
+            border: 2px solid black;
+            background: transparent;
+            color: #000000;
+            font-weight: bolder;
+            box-shadow: 0 0 10px 0px;
+        }
+
+        input::placeholder {
+            color: #000000;
+        }
+
+        #submit {
+            width: 100px;
+            border-radius: 15px;
+            border: 2px solid black;
+            background: transparent;
+            box-shadow: 0 0 10px px;
+            font-weight: bold;
+            padding: 5px 16px;
+            cursor: pointer;
+        }
+
+        #submit:hover {
+            background: pink;
+            box-shadow: -5px -5px 25px #eb00ff, 5px 5px 23px #00f0ff;
+        }
+
+        h1 {
+            border-radius: 15px;
+            padding: 10px;
+            margin-top: -50px;
+            margin-bottom: 60px;
+            background: url(https://png.pngtree.com/thumb_back/fh260/background/20240913/pngtree-light-blue-velvet-background-dark-texture-with-a-gradient-image_16180951.jpg) center;
+            background-size: cover;
+            background-clip: text;
+            animation: animate 2.5s linear infinite;
+            color: transparent;
+
+        }
+
+        @keyframes animate {
+            to {
+                background-position-x: 500px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>
+            Login Form
+        </h1>
+        <form action="form2.html" method="get">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required><br><br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password" required><br><br>
+            <label for="dob">Date Of Birth</label>
+            <input type="date" name="dob" id="" required><br><br>
+            <input type="submit" value="Submit" id="submit">
+        </form>
+    </div>
+
+</body>
+
+</html>
